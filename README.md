@@ -1,44 +1,4 @@
-### Downloading the Files
-To download `requirements.txt` and `README.md`, follow these steps:
 
-1. **Copy and Paste**:
-   - **requirements.txt**:
-     - Copy the text above starting with `fastapi==0.115.0` and ending with `requests==2.32.3`.
-     - Open a text editor (e.g., VS Code, Notepad).
-     - Paste the text and save as `requirements.txt` in your project root (`ledgerone_prototype/`).
-   - **README.md**:
-     - Copy the text above starting with `# LedgerOne Prototype` and ending with `## License`.
-     - Paste into a text editor and save as `README.md` in the project root.
-
-2. **Alternative: Download via Terminal**:
-   - If you prefer, you can create the files directly in your terminal:
-     ```bash
-     # For requirements.txt
-     cat << EOF > requirements.txt
-     fastapi==0.115.0
-     streamlit==1.38.0
-     pydantic==2.9.2
-     pydantic-settings==2.5.2
-     pandas==2.2.3
-     sqlalchemy==2.0.35
-     pytesseract==0.3.13
-     pdf2image==1.17.0
-     sentence-transformers==3.1.1
-     scikit-learn==1.5.2
-     lightgbm==4.5.0
-     fuzzywuzzy==0.18.0
-     python-Levenshtein==0.25.1
-     pytest==8.3.3
-     black==24.8.0
-     isort==5.13.2
-     bcrypt==4.2.0
-     pyjwt==2.9.0
-     requests==2.32.3
-     EOF
-     ```
-     ```bash
-     # For README.md
-     cat << EOF > README.md
      # LedgerOne Prototype
 
      LedgerOne is a financial management prototype for Kenyan businesses, supporting invoice processing, payroll, accounting, and AI-driven automation. Built with FastAPI and Streamlit, it includes Kenyan-specific features (KRA-compliant VAT, PAYE, NSSF, SHA, M-Pesa integration).
@@ -132,10 +92,4 @@ To download `requirements.txt` and `README.md`, follow these steps:
      ```
    - Open `requirements.txt` to confirm it lists all 18 dependencies.
    - Open `README.md` to verify setup instructions and project details.
-
-### Notes
-- **requirements.txt**: Matches dependencies used in cells 1–10, ensuring compatibility (e.g., FastAPI 0.115.0, Streamlit 1.38.0). Install with `pip` to run the app.
-- **README.md**: Provides clear setup, usage, and deployment instructions, including Docker. It’s tailored for Kenyan users with references to KRA compliance and demo data.
-- **Download Confirmation**: The files are plain text, so copying or using the `cat` commands above creates them directly. No external downloads are needed.
-- **Extensibility**: Add new dependencies to `requirements.txt` or update `README.md` for new features by editing the files manually.
 
